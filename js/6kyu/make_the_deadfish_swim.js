@@ -6,6 +6,9 @@ function parse( data )
   let res = new Array();
   let val = 0;
 
+  // could use
+  // data.split('').reduce(...)
+  // and switch(...)
   Array.from(data).forEach((char) => {
   
     if (char === "o") {
