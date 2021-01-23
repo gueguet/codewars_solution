@@ -10,12 +10,14 @@ def nb_dig(n, d):
       if char == str(d):
         digit_counter +=1
 
-  print(all_square)
-  print(digit_counter)
-
   return digit_counter
 
 
 
 if __name__ == "__main__":
   nb_dig(25, 1)
+
+"""
+Better :
+return sum(str(i*i).count(str(d)) for i in range(n+1))
+"""
