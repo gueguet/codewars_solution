@@ -19,3 +19,13 @@ def to_camel_case(text):
 
 
 to_camel_case("the_Cat-was_Hungry")
+
+
+"""
+difference between title and capitalize method
+
+>>> a.title()
+'Silly Question'
+>>> a.capitalize()
+'Silly question'
+"""
