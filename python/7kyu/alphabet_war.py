@@ -1,3 +1,5 @@
+# https://www.codewars.com/kata/59377c53e66267c8f6000027/train/python
+
 def alphabet_war(fight):
   left_dict = dict(zip(['w','p','b','s'],[4,3,2,1]))
   right_dict = dict(zip(['m','q','d','z'],[4,3,2,1]))
