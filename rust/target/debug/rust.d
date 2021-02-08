@@ -1,0 +1,1 @@
+/Users/gueguet57/Desktop/codewars_solution/rust/target/debug/rust: /Users/gueguet57/Desktop/codewars_solution/rust/src/kyu7/even_and_odds.rs /Users/gueguet57/Desktop/codewars_solution/rust/src/kyu7/mod.rs /Users/gueguet57/Desktop/codewars_solution/rust/src/main.rs
