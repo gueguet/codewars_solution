@@ -1,7 +1,8 @@
 // cannot begin a module with a letter...
-mod kyu7;
+mod kyu8;
+
 
 fn main() {
     println!("Launched -- From main!");
-    kyu7::main();
+    kyu8::main();
 }
