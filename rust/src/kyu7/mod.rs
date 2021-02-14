@@ -1,5 +1,6 @@
 pub mod even_and_odds;
+pub mod string_end_with
 
 pub fn main() {
-    even_and_odds::main()
+    string_end_with::main();
 }
