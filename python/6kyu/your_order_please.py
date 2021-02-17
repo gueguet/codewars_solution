@@ -24,3 +24,9 @@ order("is2 Thi1s T4est 3a")
 
   
 
+"""
+Clever solution... use filter...
+
+def order(sentence):
+  return " ".join(sorted(sentence.split(), key=lambda x: int(filter(str.isdigit, x))))
+"""
