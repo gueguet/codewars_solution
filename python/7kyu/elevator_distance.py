@@ -9,3 +9,8 @@ def elevator_distance(array):
 
 elevator_distance([7,1,7,1])
 
+"""
+clever :
+return sum(abs(a - b) for a, b in zip(array, array[1:]))
+since array[1:] isd shorter --> generator will stop at the end of this array[1:]
+"""
