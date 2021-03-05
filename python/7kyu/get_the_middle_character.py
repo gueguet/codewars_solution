@@ -5,5 +5,6 @@ def get_middle(s):
         return (s[(len(s)//2)-1:(len(s)//2)+1])
     else:
         return (s[len(s)//2])
-        
+
 get_middle("test")
+
