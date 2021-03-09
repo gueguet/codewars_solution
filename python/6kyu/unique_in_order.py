@@ -12,3 +12,9 @@ def unique_in_order(iterable):
             res.append(element)
         previous = element
     return res
+
+
+"""
+One line solution
+return [k for (k, _) in groupby(iterable)]
+"""
