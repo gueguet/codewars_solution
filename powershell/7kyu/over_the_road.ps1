@@ -14,14 +14,19 @@ function overTheRoad($address, $n) {
 
     $right_array = $right_array | Sort-Object -Descending
 
-    for ($i = 0; $i -lt $n; $i++) {
-        if ($left_array[$i] -eq $address) {
-            return $right_array[$i]
-        }
-        if ($right_array[$i] -eq $address) {
-            return $left_array[$i]
-        }
-    }
+    Write-Output $right_array.indexof($address)
+    Write-Output $left_array.indexof($address)
+
+
+
+    # for ($i = 0; $i -lt $n; $i++) {
+    #     if ($left_array[$i] -eq $address) {
+    #         return $right_array[$i]
+    #     }
+    #     if ($right_array[$i] -eq $address) {
+    #         return $left_array[$i]
+    #     }
+    # }
 }
 
 
