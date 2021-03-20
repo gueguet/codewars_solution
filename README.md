@@ -1,1 +1,1 @@
-Series of Kata from Codewars!
+Series of Kata from Codewars! A lot of Python!
