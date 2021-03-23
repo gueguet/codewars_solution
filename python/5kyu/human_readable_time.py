@@ -8,5 +8,9 @@ def make_readable(seconds):
 
     return("%02d:%02d:%02d" % (hours, minutes % 60, seconds % 60))
 
-
 make_readable(86399)
+
+"""
+* clever
+return '{:02}:{:02}:{:02}'.format(s / 3600, s / 60 % 60, s % 60)
+"""
