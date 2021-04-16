@@ -33,8 +33,8 @@ else
 fi
 
 
-# * could have been way shorter...
-'
+: '
+* could have been way shorter...
 total=$((dad_years_old-2*son_years_old))
 echo "${total#-}"
 '
