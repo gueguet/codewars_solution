@@ -3,36 +3,25 @@
 function LongestConsec([string[]] $strarr, [int]$k) 
 {
 
-  $longest_concatenate = 0
+  $longest_concatenate = ""
 
 
-  for($i = 0; $i -lt $strarr.length-1-$k; $i++)
+  for($i = 0; $i -lt $strarr.length-$k+1; $i++)
   {
 
     $current_concatenate = ""
     
-    for($j = 0; $j -lt $k; $j++) {
-      $current_concatenate = $current_concatenate + $strarr[$j].length
+    for($j = $i; $j -lt $i+$k; $j++) {
+      $current_concatenate = $current_concatenate + $strarr[$j]
     }
 
-    if ($current_concatenate -gt $longest_concatenate) {
-
-      Write-Output "yessss"
-
-      $res = ""
+    if ($current_concatenate.Length -gt $longest_concatenate.Length) {
       $longest_concatenate = $current_concatenate
-      Write-Output $res
-      $res = $strarr[$i] + $strarr[$i+1]
-      for($j = 0; $j -lt $k; $j++) {
-        Write-Output $strarr[$j]
-        $res = $res + $strarr[$j]
-      }
     }
-
   }
 
-  Write-Output $res
-  # return $res
+  return $longest_concatenate
+
 }
 
 
