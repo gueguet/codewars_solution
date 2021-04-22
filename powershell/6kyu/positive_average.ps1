@@ -22,6 +22,8 @@ function pos-average($s)
       }
 
       Write-Output "--------------------------"
+      Write-Output "Yosh"
+
 
     }
 
