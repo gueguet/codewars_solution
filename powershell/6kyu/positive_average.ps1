@@ -1,0 +1,1 @@
+# https://www.codewars.com/kata/59f4a0acbee84576800000af/train/powershell
