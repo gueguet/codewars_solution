@@ -10,7 +10,6 @@ def multi_table(number):
     print(res)
     print(res[:-1])
 
-
     return res[:-1]
 
 multi_table(5)
