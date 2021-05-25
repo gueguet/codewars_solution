@@ -20,3 +20,11 @@ def str_to_hash(st):
   return res_hash
 
 str_to_hash("a=1, b=2, c=3, d=4")
+
+"""
+* clever
+
+from re import findall
+def str_to_hash(st): 
+    return {i:int(j)for i,j in findall(r'(\w+)=(\d+)',st)}
+"""
