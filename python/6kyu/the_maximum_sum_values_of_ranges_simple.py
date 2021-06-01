@@ -8,7 +8,6 @@ def max_sum(a, ranges):
     if current_sum > max_sum:
       max_sum = current_sum
 
-  print(max_sum)
   return max_sum
 
 
