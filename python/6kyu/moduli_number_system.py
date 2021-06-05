@@ -39,7 +39,7 @@ from itertools import combinations
 from fractions import gcd
 from functools import reduce
 
-def fromNb2Str(n, modsys):
+def fromNb2Str(n, modsys): 
     if any(gcd(x, y) > 1 for x, y in combinations(modsys, 2)) or n > reduce(lambda x, y: x*y, modsys):
         return "Not applicable"
     return "-" + "--".join(str(n % m) for m in modsys) + "-"
