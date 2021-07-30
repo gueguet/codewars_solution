@@ -22,3 +22,18 @@ def is_valid_IP(strng):
   return True
 
 is_valid_IP('12.255.56.1')
+
+
+"""
+* clever
+
+def is_valid_IP(strng):
+  lst = strng.split('.')
+  passed = 0
+  for sect in lst:
+    if sect.isdigit():
+      if sect[0] != '0':
+        if 0 < int(sect) <= 255:
+          passed += 1
+  return passed == 4
+"""
