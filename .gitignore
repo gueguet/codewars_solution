@@ -1,4 +1,9 @@
-notes.txt
 .vscode
 .DS_STORE
-progression.txt
+notes.md
+
+# js
+node_modules/
+package-lock.json
+package.json
+
