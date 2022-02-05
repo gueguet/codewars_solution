@@ -2,10 +2,10 @@
 
 Series of Kata from Codewars! A lot of Python!
 
-## [Profile](https://www.codewars.com/users/gueguet)
+## Codewars Stats
 
-![Codewars Rank](https://www.codewars.com/users/gueguet/badges/large)
-![Link to my profile](https://www.codewars.com/users/gueguet)
+![Codewars rank](https://www.codewars.com/users/gueguet/badges/large)  
+[My Codeward profile](https://www.codewars.com/users/gueguet)
 
 02/05/2022  
 Leaderboard Position: #4,826  
