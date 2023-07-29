@@ -1,36 +1,37 @@
 # https://www.codewars.com/kata/54a91a4883a7de5d7800009c/train/python
 
+import re
+
 def increment_string(strng):
-    num = None
-    idx = 0
-    for char in strng:
-        if not (char.isalpha()):
-            num = strng[idx:]
-            break
-        idx += 1
-    strng = strng[:idx]
-
-    if num is None:
-        return strng + str(1)
+    
+    match_number = re.findall("\d+",strng)
+    res = strng
+    
+    if match_number:
+        number = int(match_number[-1])
+        res = res[:-len(str(number))]
+        new_number = number + 1
+        
+        if (len(str(new_number)) > len(str(number)) and match_number[-1][0] == "0"):
+            res = res[:-1]
+            res += str(new_number)
+        else:    
+            res += str(new_number)
+    
     else:
-        int_num = int(num)
+        res += "1"
+    
+    return res    
 
-    if (len(str(int_num+1))) == len(num):
-        return (strng + str(int_num+1))
 
-    else:
-        if (num.count('0') == len(num)):
-            return (strng + '0' * (num.count('0')-1) + str((int_num+1)))
-        else:
-            return (strng + '0' * num.count('0') + str(int_num+1))
+"""
+# * Clever
 
-        return (strng + str(int_num+1))
+def increment_string(strng):
+    head = strng.rstrip('0123456789')
+    tail = strng[len(head):]
+    if tail == "": return strng+"1"
+    return head + str(int(tail) + 1).zfill(len(tail))
+"""
 
-# print(increment_string("foo"))
-# print(increment_string("foobar00"))
-# print(increment_string("foobar001"))
-# print(increment_string("test099"))
-# print(increment_string("test99"))
-
-print(increment_string("foobar00999"))
-
+increment_string("B18331uwya10700001619484159")
